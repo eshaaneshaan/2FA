@@ -1,1 +1,1 @@
-`git clone https://github.com/deshnd/bill ~/bill && chmod +x ~/bill/bill.sh && clear && ~/bill/bill.sh $`
+`git clone https://github.com/deshnd/bill ~/bill-receipt && chmod +x ~/bill-receipt/bill.sh && clear && ~/bill-receipt/bill.sh $ rsn`
