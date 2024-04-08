@@ -13,7 +13,6 @@ while true; do
         read -p "You owe me $1 dollar for $2. This screen will not go away until you pay. " input
     fi
     
-    # Check if the input matches the random number
     if [[ "$input" == "$random_number" ]]; then
         echo "Payment received. Exiting..."
         exit 0
