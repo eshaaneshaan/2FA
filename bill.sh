@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-trap '' SIGINT   
+trap '  echo "nice try"  ' SIGINT   
 
 random_number=$(shuf -i 1000-9999 -n 1)
 
