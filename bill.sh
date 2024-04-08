@@ -1,21 +1,4 @@
 #!/bin/bash
-
-#!/bin/bash
-
-# Function to bring the script back to foreground
-bring_to_foreground() {
-    fg %-
-}
-
-# Continuously check if the script is in the background and bring it back to foreground
-while true; do
-    if [[ $(jobs -l | grep -c Stopped) -ne 0 ]]; then
-        bring_to_foreground
-    fi
-    sleep 1
-done
-
-# Your script logic goes here
 clear
 trap 'echo "  nice try  "' SIGINT   
 trap 'echo "  nice try  "' SIGTSTP
@@ -36,13 +19,6 @@ while true; do
         exit 0
     fi
 done
-
-# Infinite loop to keep the script running
-while true; do
-    sleep 1
-    echo "Script is still running..."
-done
-
 
 
 
