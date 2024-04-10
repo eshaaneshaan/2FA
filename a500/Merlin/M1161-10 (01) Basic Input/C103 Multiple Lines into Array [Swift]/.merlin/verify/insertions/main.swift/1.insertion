@@ -1,3 +1,0 @@
-let lines = readLines()
-print(lines.count)
-printLines(lines:lines)

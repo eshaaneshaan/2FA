@@ -1,7 +1,0 @@
-String = A2
-String = A1
-String = C3
-String = B2
-String = C1
-String = B1
-String = C1

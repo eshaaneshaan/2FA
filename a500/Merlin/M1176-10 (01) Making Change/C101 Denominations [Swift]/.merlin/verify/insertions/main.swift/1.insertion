@@ -1,2 +1,0 @@
-let sum = "$949.98"
-printDenominations(forSum:sum)
