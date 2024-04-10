@@ -1,0 +1,5 @@
+let itemSubtotal = "$32.99"
+let tip = "$4.94"
+let tax = "$2.63"
+let amountPaid = "$130.90"
+printReceipt(itemSubtotal:itemSubtotal, tip:tip, tax:tax, amountPaid:amountPaid)

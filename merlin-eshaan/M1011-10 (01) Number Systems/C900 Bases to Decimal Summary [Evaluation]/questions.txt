@@ -1,0 +1,30 @@
+  1. Convert 1100 0000 0000 1011 from BINARY to DECIMAL
+  2. Convert 1010 0100 0011 0111 from BINARY to DECIMAL
+  3. Convert 1110 1010 0011 0011 from BINARY to DECIMAL
+  4. Convert 0111 1101 1000 0101 from BINARY to DECIMAL
+  5. Convert 0001 1100 0011 from BINARY to DECIMAL
+  6. Convert 0111 0010 1110 1001 from BINARY to DECIMAL
+  7. Convert 1000 1101 1001 1000 from BINARY to DECIMAL
+  8. Convert 1010 0111 1101 0100 from BINARY to DECIMAL
+  9. Convert 1100 1000 1010 1110 from BINARY to DECIMAL
+ 10. Convert 0100 1101 0100 0010 from BINARY to DECIMAL
+ 11. Convert 111 642 from OCTAL to DECIMAL
+ 12. Convert 312 752 from OCTAL to DECIMAL
+ 13. Convert 501 361 from OCTAL to DECIMAL
+ 14. Convert 124 471 from OCTAL to DECIMAL
+ 15. Convert 662 536 from OCTAL to DECIMAL
+ 16. Convert 336 563 from OCTAL to DECIMAL
+ 17. Convert 510 764 from OCTAL to DECIMAL
+ 18. Convert 673 426 from OCTAL to DECIMAL
+ 19. Convert 657 456 from OCTAL to DECIMAL
+ 20. Convert 111 703 from OCTAL to DECIMAL
+ 21. Convert f3 1b ba from HEXADECIMAL to DECIMAL
+ 22. Convert a2 7e 2b from HEXADECIMAL to DECIMAL
+ 23. Convert fd 27 cc from HEXADECIMAL to DECIMAL
+ 24. Convert a7 ff 1a from HEXADECIMAL to DECIMAL
+ 25. Convert 33 88 b4 from HEXADECIMAL to DECIMAL
+ 26. Convert 01 6b b7 from HEXADECIMAL to DECIMAL
+ 27. Convert 32 ab 60 from HEXADECIMAL to DECIMAL
+ 28. Convert 2e f8 af from HEXADECIMAL to DECIMAL
+ 29. Convert 09 9c 22 from HEXADECIMAL to DECIMAL
+ 30. Convert e5 83 be from HEXADECIMAL to DECIMAL

@@ -1,0 +1,100 @@
+(source_file "main.swift"
+  (top_level_code_decl range=[main.swift:3:1 - line:3:24]
+    (brace_stmt implicit range=[main.swift:3:1 - line:3:24]
+      (pattern_binding_decl range=[main.swift:3:1 - line:3:24]
+        (pattern_typed type='Int'
+          (pattern_named type='Int' 'lowerLimit')
+          (type_ident id='Int' bind=Swift.(file).Int))
+        Original init:
+        (integer_literal_expr type='Int' location=main.swift:3:24 range=[main.swift:3:24 - line:3:24] value=20 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+        Processed init:
+        (integer_literal_expr type='Int' location=main.swift:3:24 range=[main.swift:3:24 - line:3:24] value=20 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+))
+  (var_decl range=[main.swift:3:5 - line:3:5] "lowerLimit" type='Int' interface type='Int' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[main.swift:4:1 - line:4:24]
+    (brace_stmt implicit range=[main.swift:4:1 - line:4:24]
+      (pattern_binding_decl range=[main.swift:4:1 - line:4:24]
+        (pattern_typed type='Int'
+          (pattern_named type='Int' 'upperLimit')
+          (type_ident id='Int' bind=Swift.(file).Int))
+        Original init:
+        (integer_literal_expr type='Int' location=main.swift:4:24 range=[main.swift:4:24 - line:4:24] value=25 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**)
+        Processed init:
+        (integer_literal_expr type='Int' location=main.swift:4:24 range=[main.swift:4:24 - line:4:24] value=25 builtin_initializer=Swift.(file).Int.init(_builtinIntegerLiteral:) initializer=**NULL**))
+))
+  (var_decl range=[main.swift:4:5 - line:4:5] "upperLimit" type='Int' interface type='Int' access=internal let readImpl=stored immutable)
+  (top_level_code_decl range=[main.swift:7:1 - line:9:1]
+    (brace_stmt implicit range=[main.swift:7:1 - line:9:1]
+      (for_each_stmt range=[main.swift:7:1 - line:9:1]
+        (pattern_named type='Int' 'i')
+        (binary_expr type='ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+          (dot_syntax_call_expr implicit type='(Int, Int) -> ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] nothrow
+            (declref_expr type='(Int.Type) -> (Int, Int) -> ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] decl=Swift.(file).Comparable extension.... [with (substitution_map generic_signature=<Self where Self : Comparable> (substitution Self -> Int))] function_ref=single)
+            (argument_list implicit
+              (argument
+                (type_expr implicit type='Int.Type' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] typerepr='Int'))))
+          (argument_list implicit
+            (argument
+              (declref_expr type='Int' location=main.swift:7:10 range=[main.swift:7:10 - line:7:10] decl=main.(file).lowerLimit@main.swift:3:5 function_ref=unapplied))
+            (argument
+              (declref_expr type='Int' location=main.swift:7:23 range=[main.swift:7:23 - line:7:23] decl=main.(file).upperLimit@main.swift:4:5 function_ref=unapplied))))
+        (pattern_binding_decl implicit
+          (pattern_named implicit type='IndexingIterator<ClosedRange<Int>>' '$i$generator')
+          Original init:
+          (call_expr implicit type='IndexingIterator<ClosedRange<Int>>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+            (dot_syntax_call_expr implicit type='() -> IndexingIterator<ClosedRange<Int>>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+              (declref_expr implicit type='(__owned ClosedRange<Int>) -> () -> IndexingIterator<ClosedRange<Int>>' decl=Swift.(file).Collection extension.makeIterator() [with (substitution_map generic_signature=<Self where Self : Collection, Self.Iterator == IndexingIterator<Self>> (substitution Self -> ClosedRange<Int>))] function_ref=compound)
+              (argument_list implicit
+                (argument
+                  (binary_expr type='ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+                    (dot_syntax_call_expr implicit type='(Int, Int) -> ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] nothrow
+                      (declref_expr type='(Int.Type) -> (Int, Int) -> ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] decl=Swift.(file).Comparable extension.... [with (substitution_map generic_signature=<Self where Self : Comparable> (substitution Self -> Int))] function_ref=single)
+                      (argument_list implicit
+                        (argument
+                          (type_expr implicit type='Int.Type' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] typerepr='Int'))))
+                    (argument_list implicit
+                      (argument
+                        (declref_expr type='Int' location=main.swift:7:10 range=[main.swift:7:10 - line:7:10] decl=main.(file).lowerLimit@main.swift:3:5 function_ref=unapplied))
+                      (argument
+                        (declref_expr type='Int' location=main.swift:7:23 range=[main.swift:7:23 - line:7:23] decl=main.(file).upperLimit@main.swift:4:5 function_ref=unapplied)))))))
+            (argument_list implicit))
+          Processed init:
+          (call_expr implicit type='IndexingIterator<ClosedRange<Int>>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+            (dot_syntax_call_expr implicit type='() -> IndexingIterator<ClosedRange<Int>>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+              (declref_expr implicit type='(__owned ClosedRange<Int>) -> () -> IndexingIterator<ClosedRange<Int>>' decl=Swift.(file).Collection extension.makeIterator() [with (substitution_map generic_signature=<Self where Self : Collection, Self.Iterator == IndexingIterator<Self>> (substitution Self -> ClosedRange<Int>))] function_ref=compound)
+              (argument_list implicit
+                (argument
+                  (binary_expr type='ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:10 - line:7:23] nothrow
+                    (dot_syntax_call_expr implicit type='(Int, Int) -> ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] nothrow
+                      (declref_expr type='(Int.Type) -> (Int, Int) -> ClosedRange<Int>' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] decl=Swift.(file).Comparable extension.... [with (substitution_map generic_signature=<Self where Self : Comparable> (substitution Self -> Int))] function_ref=single)
+                      (argument_list implicit
+                        (argument
+                          (type_expr implicit type='Int.Type' location=main.swift:7:20 range=[main.swift:7:20 - line:7:20] typerepr='Int'))))
+                    (argument_list implicit
+                      (argument
+                        (declref_expr type='Int' location=main.swift:7:10 range=[main.swift:7:10 - line:7:10] decl=main.(file).lowerLimit@main.swift:3:5 function_ref=unapplied))
+                      (argument
+                        (declref_expr type='Int' location=main.swift:7:23 range=[main.swift:7:23 - line:7:23] decl=main.(file).upperLimit@main.swift:4:5 function_ref=unapplied)))))))
+            (argument_list implicit)))
+
+        (call_expr implicit type='ClosedRange<Int>.Element?' location=main.swift:7:1 range=[main.swift:7:1 - line:7:1] nothrow
+          (dot_syntax_call_expr implicit type='() -> ClosedRange<Int>.Element?' location=main.swift:7:1 range=[main.swift:7:1 - line:7:1] nothrow
+            (declref_expr implicit type='(inout IndexingIterator<ClosedRange<Int>>) -> () -> ClosedRange<Int>.Element?' decl=Swift.(file).IndexingIterator extension.next() [with (substitution_map generic_signature=<Elements where Elements : Collection> (substitution Elements -> ClosedRange<Int>))] function_ref=compound)
+            (argument_list implicit
+              (argument inout
+                (inout_expr implicit type='inout IndexingIterator<ClosedRange<Int>>' location=main.swift:7:1 range=[main.swift:7:1 - line:7:1]
+                  (declref_expr implicit type='@lvalue IndexingIterator<ClosedRange<Int>>' location=main.swift:7:1 range=[main.swift:7:1 - line:7:1] decl=main.(file).top-level code.$i$generator@main.swift:7:10 function_ref=unapplied)))))
+          (argument_list implicit))
+        (brace_stmt range=[main.swift:7:34 - line:9:1]
+          (call_expr type='()' location=main.swift:8:5 range=[main.swift:8:5 - line:8:12] nothrow
+            (declref_expr type='(Any..., String, String) -> ()' location=main.swift:8:5 range=[main.swift:8:5 - line:8:5] decl=Swift.(file).print(_:separator:terminator:) function_ref=single)
+            (argument_list labels=_:separator:terminator:
+              (argument
+                (vararg_expansion_expr implicit type='Any...' location=main.swift:8:11 range=[main.swift:8:11 - line:8:11]
+                  (array_expr implicit type='Any...' location=main.swift:8:11 range=[main.swift:8:11 - line:8:11] initializer=**NULL**
+                    (erasure_expr implicit type='Any' location=main.swift:8:11 range=[main.swift:8:11 - line:8:11]
+                      (declref_expr type='Int' location=main.swift:8:11 range=[main.swift:8:11 - line:8:11] decl=main.(file).top-level code.i@main.swift:7:5 function_ref=unapplied)))))
+              (argument label=separator
+                (default_argument_expr implicit type='String' location=main.swift:8:10 range=[main.swift:8:10 - line:8:10] default_args_owner=Swift.(file).print(_:separator:terminator:) param=1))
+              (argument label=terminator
+                (default_argument_expr implicit type='String' location=main.swift:8:10 range=[main.swift:8:10 - line:8:10] default_args_owner=Swift.(file).print(_:separator:terminator:) param=2)))))))))

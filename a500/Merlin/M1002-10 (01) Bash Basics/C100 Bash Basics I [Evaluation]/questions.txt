@@ -1,0 +1,35 @@
+================================================================================
+1. Which of the following commands will append text to an existing file?
+------------------------------------------------------------
+	A.  echo "Hello, again!" << out.txt
+	B.  echo "Hello, again!" < out.txt
+	C.  echo "Hello, again!" >> out.txt
+	D.  echo "Hello, again!" > out.txt
+
+================================================================================
+2. The client-server model is typically only effective over short distances.
+------------------------------------------------------------
+	A.  True
+	B.  False
+
+================================================================================
+3. The command to list the contents of a directory is:
+------------------------------------------------------------
+	A.  list
+	B.  ld (lowercase "L", lowercase "D")
+	C.  listdir
+	D.  ls (lowercase "L", lowercase "S")
+
+================================================================================
+4. A file is either a destination or source for a stream of data.
+------------------------------------------------------------
+	A.  True
+	B.  False
+
+================================================================================
+5. What command can be used to view a manual about a topic?
+------------------------------------------------------------
+	A.  eman
+	B.  manual
+	C.  man
+	D.  emanual

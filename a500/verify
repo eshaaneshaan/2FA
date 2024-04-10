@@ -1,0 +1,2 @@
+cd $2
+git remote set-url origin https://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@github.com/deshnd/$1

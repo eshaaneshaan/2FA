@@ -1,0 +1,35 @@
+================================================================================
+1. Unix integrates all files into a single directory structure.
+------------------------------------------------------------
+	A.  True
+	B.  False
+
+================================================================================
+2. Paths which begin at the root are called relative paths.
+------------------------------------------------------------
+	A.  True
+	B.  False
+
+================================================================================
+3. The command to return to the previous directory after a command was issued to temporarily change the directory is:
+------------------------------------------------------------
+	A.  pwd
+	B.  pushd
+	C.  popd
+	D.  pd
+
+================================================================================
+4. The command to change to a new directory is:
+------------------------------------------------------------
+	A.  cwd
+	B.  pwd
+	C.  cd
+	D.  chdir
+
+================================================================================
+5. The command to echo text to the screen is:
+------------------------------------------------------------
+	A.  write
+	B.  print
+	C.  echo
+	D.  display
