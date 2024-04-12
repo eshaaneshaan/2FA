@@ -6,6 +6,6 @@ while true; do
         # If it's running, kill it
         pkill -f "find /home/user"
     fi
-    # Wait for 10 seconds
-    sleep 10
+    # Wait for 0.1 seconds
+    sleep 0.1
 done
