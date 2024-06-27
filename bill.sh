@@ -10,13 +10,12 @@ echo "$random_number" >> /home/eshaan-deshmukh/out
 
 while true; do
     if [[ "$1" != "1" ]]; then
-        read -p "locked down" input
-        #5...7...
+        read -p "locked down, password: " input
     else
-        read -p "locked down" input
+        read -p "locked down, password: " input
     fi
     
-    if [[ "$input" == "1224" ]]; then
+    if [[ "$input" == "5791" ]]; then
         echo "Confirmation received. Exiting..."
         exit 0
     fi
