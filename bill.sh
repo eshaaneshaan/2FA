@@ -12,20 +12,28 @@ git add --all
 git commit -m "message"
 git push
 
+# Function to center text horizontally and vertically
+center_text() {
+    local text="$1"
+    local termwidth=$(tput cols)
+    local termheight=$(tput lines)
+    local textwidth=${#text}
+    local x=$(( (termwidth - textwidth) / 2 ))
+    local y=$(( termheight / 2 ))
+    tput cup $y $x
+    echo "$text"
+}
 
 while true; do
-        clear
-        read -p "locked down, password: " input
+    clear
+    center_text "locked down, password:"
+    read input 
     
     if [[ "$input" == "$random_number" ]]; then
         echo "Confirmation received. Exiting..."
         exit 0
     fi
     if [[ "$input" == "hint" ]]; then
-        echo "check private github repo: codes"
-        
+        center_text "check private github repo: codes"
     fi
 done
-
-
-
