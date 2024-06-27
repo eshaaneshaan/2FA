@@ -10,10 +10,10 @@ echo "$random_number" >> /home/eshaan-deshmukh/out
 
 while true; do
     if [[ "$1" != "1" ]]; then
-        read -p "locked" input
+        read -p "locked down" input
         #5...7...
     else
-        read -p "locked" input
+        read -p "locked down" input
     fi
     
     if [[ "$input" == "1224" ]]; then
