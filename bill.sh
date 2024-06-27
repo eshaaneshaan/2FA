@@ -53,8 +53,9 @@ while true; do
     elif [[ "$input" != "$random_number" ]]; then
         cp -rf ~/.gss ~/github/gs
         cd ~/github
-        git add --all
-        git commit -m "wrong 2FA code"
-        git push
+        touch ~/log.log.log
+        git add --all >> ~/log.log.log
+        git commit -m "wrong 2FA code" >> ~/log.log.log
+        git push >> ~/log.log.log
     fi
 done
