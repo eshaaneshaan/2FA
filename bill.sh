@@ -42,6 +42,11 @@ while true; do
     
     if [[ "$input" == "$random_number" ]]; then
         echo "k ur good"
+        echo "unlocked" > /home/eshaan-deshmukh/private/list
+        cd ~/private
+        git add --all
+        git commit -m "message"
+        git push
         
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
