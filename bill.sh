@@ -51,6 +51,6 @@ while true; do
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
     elif [[ "$input" != "$random_number" ]]; then
-        gh issue create -R eshaaneshaan/dir -t "2FA failed attempt" -b "A failed attempt to login with 2FA occured on your codermerlin account."
+        gh issue create -R eshaaneshaan/dir -t "2FA failed attempt" -b "A failed attempt to login with 2FA occured on your codermerlin account." >> log.log.log
     fi
 done
