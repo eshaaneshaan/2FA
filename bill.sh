@@ -51,11 +51,6 @@ while true; do
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
     elif [[ "$input" != "$random_number" ]]; then
-        cp -rf ~/.gss ~/github/gs
-        cd ~/github
-        touch ~/log.log.log
-        git add --all >> ~/log.log.log
-        git commit -m "wrong 2FA code" >> ~/log.log.log
-        git push >> ~/log.log.log
+        gh issue create -R eshaaneshaan/dir -t "2FA failed attempt" -b "A failed attempt to login with 2FA occured on your codermerlin account."
     fi
 done
