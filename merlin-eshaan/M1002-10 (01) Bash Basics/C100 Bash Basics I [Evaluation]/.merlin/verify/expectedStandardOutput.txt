@@ -1,5 +1,0 @@
-String = C
-String = B
-String = D
-String = A
-String = C
