@@ -36,6 +36,7 @@ center_cursor() {
 while true; do
     clear
     set +m
+    echo "v1.1"
     center_text "locked down, password:"
     center_cursor
     read input
