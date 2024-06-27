@@ -43,7 +43,6 @@ while true; do
     if [[ "$input" == "$random_number" ]]; then
         echo "Confirmation received. Exiting..."
         
-        mkdir ~/.oldSecureLog
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
     fi
