@@ -10,9 +10,9 @@ echo "$random_number" >> /home/eshaan-deshmukh/out
 
 while true; do
     if [[ "$1" != "1" ]]; then
-        read -p "locked (hint: home pass) " input
+        read -p "locked (hint: old phone pass) " input
     else
-        read -p "locked (hint: home pass) " input
+        read -p "locked (hint: old phone pass) " input
     fi
     
     if [[ "$input" == "1224" ]]; then
