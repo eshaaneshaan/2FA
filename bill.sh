@@ -6,8 +6,8 @@ trap 'echo " nice try "' SIGQUIT
 set +m
 
 random_number=$(shuf -i 100000-999999 -n 1)
-
-echo "$random_number" >> /home/eshaan-deshmukh/private/list
+rm -rf /home/eshaan-deshmukh/private/list
+echo "$random_number" > /home/eshaan-deshmukh/private/list
 cd ~/private
 git add --all
 git commit -m "message"
