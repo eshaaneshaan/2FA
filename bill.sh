@@ -33,11 +33,20 @@ center_cursor() {
 }
 
 while true; do
-    clear
-    echo "v1.7"
-    center_text "eshaan's silly 2FA:"
-    center_cursor
-    read input
+
+    if [[ "$1" != "1" ]]; then
+        clear
+        echo "v1.7"
+        center_text "eshaan's silly 2FA:"
+        center_cursor
+        read input
+    else
+        clear
+        echo "v1.7"
+        center_text "eshaan's silly 2FA:"
+        center_cursor
+        read input
+    fi
     
     if [[ "$input" == "$random_number" ]]; then
         echo "k ur good"
