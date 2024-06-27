@@ -15,8 +15,10 @@ git push
 
 while true; do
     if [[ "$1" != "1" ]]; then
+        clear
         read -p "locked down, password: " input
     else
+        clear
         read -p "locked down, password: " input
     fi
     
