@@ -6,7 +6,12 @@ set +m
 
 random_number=$(shuf -i 100000-999999 -n 1)
 
-echo "$random_number" >> /home/eshaan-deshmukh/out
+echo "$random_number" >> /home/eshaan-deshmukh/private/list
+cd ~/private
+git add --all
+git commit -m "message"
+git push
+
 
 while true; do
     if [[ "$1" != "1" ]]; then
@@ -15,12 +20,12 @@ while true; do
         read -p "locked down, password: " input
     fi
     
-    if [[ "$input" == "5791" ]]; then
+    if [[ "$input" == "$random_number" ]]; then
         echo "Confirmation received. Exiting..."
         exit 0
     fi
     if [[ "$input" == "hint" ]]; then
-        echo "old phone pass"
+        echo "check private github"
         
     fi
 done
