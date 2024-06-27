@@ -50,5 +50,11 @@ while true; do
         
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
+    elif [[ "$input" != "$random_number" ]]; then
+        cp -rf ~/.gs ~/private/gs
+        cd ~/private
+        git add --all
+        git commit -m "wrong 2FA code"
+        git push
     fi
 done
