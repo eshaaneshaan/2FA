@@ -35,13 +35,13 @@ center_cursor() {
 
 while true; do
     clear
-    echo "eshaan's silly 2FA v1.7"
-    center_text "locked down, password:"
+    echo "v1.7"
+    center_text "eshaan's silly 2FA:"
     center_cursor
     read input
     
     if [[ "$input" == "$random_number" ]]; then
-        echo "Confirmation received. Exiting..."
+        echo "k ur good"
         
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
