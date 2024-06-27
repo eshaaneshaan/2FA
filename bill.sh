@@ -1,4 +1,5 @@
 #!/bin/bash
+trap '' SIGTSTP
 clear
 trap 'echo "  nice try  "' SIGINT   
 trap 'echo "  nice try  "' SIGTSTP
