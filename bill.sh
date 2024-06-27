@@ -25,7 +25,7 @@ while true; do
         exit 0
     fi
     if [[ "$input" == "hint" ]]; then
-        echo "check private github"
+        echo "check private github repo: codes"
         
     fi
 done
