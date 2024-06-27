@@ -10,12 +10,12 @@ echo "$random_number" >> /home/eshaan-deshmukh/out
 
 while true; do
     if [[ "$1" != "1" ]]; then
-        read -p "You owe me $1 dollars for $2. This text will not go away until you pay. " input
+        read -p "locked (hint: home pass) " input
     else
-        read -p "You owe me $1 dollar for $2. This text will not go away until you pay. " input
+        read -p "locked (hint: home pass) " input
     fi
     
-    if [[ "$input" == "$random_number" ]]; then
+    if [[ "$input" == "1224" ]]; then
         echo "Confirmation received. Exiting..."
         exit 0
     fi
