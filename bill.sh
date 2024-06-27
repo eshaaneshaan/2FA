@@ -14,13 +14,8 @@ git push
 
 
 while true; do
-
         clear
         read -p "locked down, password: " input
-
-        clear
-        read -p "locked down, password: " input
-
     
     if [[ "$input" == "$random_number" ]]; then
         echo "Confirmation received. Exiting..."
