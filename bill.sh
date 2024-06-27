@@ -46,7 +46,4 @@ while true; do
         mv ~/.merlinSecure ~/.oldSecureLog/."$random_number"
         exit 0
     fi
-    if [[ "$input" == "hint" ]]; then
-        center_text "check private github repo: codes"
-    fi
 done
