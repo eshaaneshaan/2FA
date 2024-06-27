@@ -1,9 +1,7 @@
 #!/bin/bash
-trap '' SIGTSTP
 clear
 trap 'echo "  nice try  "' SIGINT   
 trap 'echo "  nice try  "' SIGTSTP
-trap 'echo " nice try "' SIGQUIT
 set +m
 
 random_number=$(shuf -i 100000-999999 -n 1)
