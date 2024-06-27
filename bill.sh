@@ -35,7 +35,7 @@ center_cursor() {
 
 while true; do
     clear
-    echo "v1.66"
+    echo "v1.7"
     center_text "locked down, password:"
     center_cursor
     read input
