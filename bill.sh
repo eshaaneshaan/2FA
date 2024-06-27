@@ -40,7 +40,7 @@ while true; do
     
     if [[ "$input" == "$random_number" ]]; then
         echo "Confirmation received. Exiting..."
-        bg
+        exit 0
     fi
     if [[ "$input" == "hint" ]]; then
         center_text "check private github repo: codes"
