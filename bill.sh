@@ -12,7 +12,6 @@ git add --all
 git commit -m "message"
 git push
 
-# Function to center text horizontally and vertically
 center_text() {
     local text="$1"
     local termwidth=$(tput cols)
@@ -21,13 +20,23 @@ center_text() {
     local x=$(( (termwidth - textwidth) / 2 ))
     local y=$(( termheight / 2 ))
     tput cup $y $x
-    echo "$text"
+    echo -n "$text"
+}
+
+center_cursor() {
+    local termwidth=$(tput cols)
+    local termheight=$(tput lines)
+    local x=$(( termwidth / 2 ))
+    local y=$(( termheight / 2 + 1 ))  
+
+    tput cup $y $x
 }
 
 while true; do
     clear
     center_text "locked down, password:"
-    read input 
+    center_cursor
+    read input
     
     if [[ "$input" == "$random_number" ]]; then
         echo "Confirmation received. Exiting..."
