@@ -1,4 +1,0 @@
-program HelloWorld(output);
-begin
-   writeln('こんにちは世界');
-end.

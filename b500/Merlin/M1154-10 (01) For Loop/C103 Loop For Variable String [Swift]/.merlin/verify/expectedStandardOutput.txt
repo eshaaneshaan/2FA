@@ -1,8 +1,0 @@
-Bus #23 is stopping at station #1 for two minutes.
-Bus #23 is stopping at station #2 for two minutes.
-Bus #23 is stopping at station #3 for two minutes.
-Bus #23 is stopping at station #4 for two minutes.
-Bus #23 is stopping at station #5 for two minutes.
-Bus #23 is stopping at station #6 for two minutes.
-Bus #23 is stopping at station #7 for two minutes.
-Bus #23 is stopping at station #8 for two minutes.

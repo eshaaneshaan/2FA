@@ -1,3 +1,0 @@
-let integers = readIntegers()
-print(integers.count)
-printIntegers(integers:integers)

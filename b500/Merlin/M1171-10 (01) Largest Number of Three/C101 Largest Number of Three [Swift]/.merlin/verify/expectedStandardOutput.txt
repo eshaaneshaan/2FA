@@ -1,4 +1,0 @@
-a = 2898.29
-b = -787.25
-c = -9338.51
-The largest value is a

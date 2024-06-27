@@ -1,5 +1,0 @@
-let itemSubtotal = "$912.76"
-let tip = "$136.91"
-let tax = "$73.02"
-let amountPaid = "$1222.60"
-printReceipt(itemSubtotal:itemSubtotal, tip:tip, tax:tax, amountPaid:amountPaid)

@@ -1,5 +1,0 @@
-xs#include <stdio.h>
-int main()
-{
-  printf("Bajoran Wormhole");
-}
