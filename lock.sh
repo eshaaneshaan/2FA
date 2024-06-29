@@ -5,8 +5,8 @@ trap '' SIGTSTP
 set +m
 
 random_number=$(shuf -i 100000-999999 -n 1)
-rm -rf /home/eshaan-deshmukh/private/list
-echo "$random_number" > /home/eshaan-deshmukh/private/list
+rm -rf ~/private/list
+echo "$random_number" > ~/private/list
 cd ~/private
 git add --all
 git commit -m "message"
@@ -50,7 +50,7 @@ while true; do
     
     if [[ "$input" == "$random_number" ]]; then
         echo "k ur good"
-        echo "unlocked" > /home/eshaan-deshmukh/private/list
+        echo "unlocked" > ~/private/list
         cd ~/private
         git add --all
         git commit -m "message"
