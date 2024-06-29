@@ -6,7 +6,7 @@ set +m
 
 random_number=$(shuf -i 100000-999999 -n 1)
 rm -rf ~/private/list
-echo "$random_number" > ~/private/list
+echo "$random_number" > ~/privatre/list
 cd ~/private
 git add --all
 git commit -m "message"
