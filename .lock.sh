@@ -59,6 +59,6 @@ while true; do
         
         exit 0
     elif [[ "$input" != "$random_number" ]]; then
-        gh issue create -R "$1"/"$3" -t "2FA failed attempt" -b "A failed attempt to login with 2FA occured on your codermerlin account." >> log.log.log
+        gh issue create -R "$3"/"$4" -t "2FA failed attempt" -b "A failed attempt to login with 2FA occured on your codermerlin account." >> log.log.log
     fi
 done
