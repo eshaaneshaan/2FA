@@ -2,6 +2,4 @@ first=$(head -n 1 ./info)
 second=$(sed -n '2p' ./info)
 last=$(tail -n 1 ./info)
 
-chmod ./.setup.sh
-
-./.setup.sh "$first" "$second" "$last"
+~/.lock.sh "$first" "$second" "$last"
