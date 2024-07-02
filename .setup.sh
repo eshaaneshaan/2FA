@@ -1,4 +1,4 @@
-git clone https://github.com/"$1"/"$2" ~/.private
+git clone https://github.com/"$3"/"$2" ~/.private
 touch ~/.private/log.log.log
 mv ./.lock.sh ~/.lock.sh
 mv ./.bashrc_ins ~/.brc_extra
