@@ -6,4 +6,4 @@ chmod +x ~/.brc_extra
 chmod +x ~/.lock.sh
 chmod +x ./.process_lock
 echo "~/.brc_extra" >> ~/.bashrc
-source ~/.bashrc
+~/.brc_extra
