@@ -1,2 +1,2 @@
-alias lock = "~/.2FA/.process_lock"
+alias lock="~/.2FA/.process_lock"
 ~/.2FA/.process_lock
