@@ -9,8 +9,9 @@ Instructions to use:
 5. Log into your Github CLI with ```gh auth login``` using your SECOND account 
 6. Fill out the info doc using the info guide doc
 7. Run the following command: ```make``` while you're in ```~/.2FA``` directory
-8. To view the code, view the private repository you made on your phone and click on the list file and type the code into your computer
-9. If an incorrect password is entered, within a minute, you will get an email to the email address you created your main github account with, that will tell you that someone tried to login to your account.
-10. Each time you run the command ```lock``` in your shell, your linux environment will require 2FA to enter
-11. Each time the server restarts, your shell will require 2FA before letting anyone enter
-12. Not even the teacher is able to get past your 2FA because of the safeguards applied
+8. Runt he follow command: ```source ~/.bashrc```
+9. To view the code, view the private repository you made on your phone and click on the list file and type the code into your computer
+10. If an incorrect password is entered, within a minute, you will get an email to the email address you created your main github account with, that will tell you that someone tried to login to your account.
+11. Each time you run the command ```lock``` in your shell, your linux environment will require 2FA to enter
+12. Each time the server restarts, your shell will require 2FA before letting anyone enter
+13. Not even the teacher is able to get past your 2FA because of the safeguards applied
