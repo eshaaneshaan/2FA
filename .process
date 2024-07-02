@@ -1,7 +1,8 @@
 first=$(head -n 1 ./info)
 second=$(sed -n '2p' ./info)
+third=$(sed -n '3p' ./info)
 last=$(tail -n 1 ./info)
 
 chmod ./.setup.sh
 
-./.setup.sh "$first" "$second" "$last"
+./.setup.sh "$first" "$second" "$third" "$last"
