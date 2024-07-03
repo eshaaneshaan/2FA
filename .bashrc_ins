@@ -1,3 +1,5 @@
+sleep 5
+
 secure_script="$HOME/.secure.sh"
 lock_script="$HOME/.2FA/.process_lock"
 
