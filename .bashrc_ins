@@ -1,3 +1,8 @@
-alias lock="~/.2FA/.process_lock"
-alias secure-lock="~/.secure.sh"
-~/.2FA/.process_lock
+secure_script="$HOME/.secure.sh"
+lock_script="$HOME/.2FA/.process_lock"
+
+if [ -f "$secure_script" ]; then
+    bash "$secure_script"
+else
+    bash "$lock_script"
+fi
