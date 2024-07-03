@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sleep 5
-
 original_settings=$(stty -g)
 
 cleanup() {
