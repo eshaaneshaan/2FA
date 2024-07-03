@@ -49,13 +49,13 @@ center_cursor() {
 while true; do
     if [[ "$1" != "1" ]]; then
         clear
-        echo "v1.7"
+        echo "v1.2"
         center_text "silly 2FA:"
         center_cursor
         read input
     else
         clear
-        echo "v1.7"
+        echo "v1.2"
         center_text "silly 2FA:"
         center_cursor
         read input
