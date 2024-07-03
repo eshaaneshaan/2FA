@@ -1,4 +1,20 @@
 #!/bin/bash
+
+# Save original terminal settings
+original_settings=$(stty -g)
+
+cleanup() {
+    trap - SIGINT SIGTSTP
+    set -m
+    stty "$original_settings"
+    clear
+    tput cnorm
+    tput cup 0 0
+    exit 0
+}
+
+trap cleanup EXIT
+
 clear
 trap '' SIGINT   
 trap '' SIGTSTP
@@ -28,12 +44,10 @@ center_cursor() {
     local termheight=$(tput lines)
     local x=$(( termwidth / 2 ))
     local y=$(( termheight / 2 + 1 ))  
-
     tput cup $y $x
 }
 
 while true; do
-
     if [[ "$1" != "1" ]]; then
         clear
         echo "v1.7"
@@ -56,9 +70,22 @@ while true; do
         git commit -m "message"
         git push
         
-        
+        # Restore signal handling
+        trap - SIGINT SIGTSTP
+
+        # Enable job control
+        set -m
+
+        # Reset terminal settings
+        stty "$original_settings"
+
+        # Clear screen and reset cursor
+        clear
+        tput cnorm  # Show cursor
+        tput cup 0 0  # Move cursor to top-left corner
+
         exit 0
     elif [[ "$input" != "$random_number" ]]; then
-        gh issue create -R "$1"/"$4" -t "2FA failed attempt" -b "A failed attempt to login with 2FA occured on your codermerlin account." >> log.log.log
+        gh issue create -R "$1"/"$4" -t "2FA failed attempt" -b "A failed attempt to login with 2FA occurred on your codermerlin account." >> log.log.log
     fi
 done
